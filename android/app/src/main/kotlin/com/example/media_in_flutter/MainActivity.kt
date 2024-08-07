@@ -1,4 +1,4 @@
-package com.example.u_1_hello_world
+package com.example.media_in_flutter
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,6 +1,6 @@
 {
-    "name": "_1_hello_world",
-    "short_name": "_1_hello_world",
+    "name": "media_in_flutter",
+    "short_name": "media_in_flutter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
