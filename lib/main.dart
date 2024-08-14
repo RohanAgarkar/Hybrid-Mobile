@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    const String appTitle = 'Sample Demo';
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: appTitle,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(appTitle),
+          title: Text('Working with Images'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        body: Center(
+          child: Column(
+            children: [
+              Image.network('https://nuv.ac.in/wp-content/uploads/new-logo.jpg', width: 400,height: 200),
+               const Image(image: AssetImage('../assets/new-logo.jpg')),
+              Text(
+                'Welcome to NUV',
+                style: TextStyle(fontSize: 50.0),
+              )
+            ],
+          ),
         ),
       ),
     );
